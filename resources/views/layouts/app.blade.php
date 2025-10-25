@@ -24,7 +24,7 @@
 </head>
 <body class="flex flex-col min-h-screen">
      <!-- Header & Navigasi -->
-    <header class="shadow-md sticky top-0 z-50 bg-gray-800 backdrop-blur-md">
+        <header class="shadow-md sticky top-0 z-50 bg-gray-800 backdrop-blur-md">
         <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <a href="#" class="text-2xl font-bold text-blue-600 hover:text-blue-700 transition duration-300">.CHKL</a>
             <div class="hidden md:flex flex-wrap justify-center gap-6">
@@ -63,5 +63,25 @@
             </div>
         </div>
     </footer>
+
+        <!-- Script JavaScript untuk Navigasi Mobile -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            // Fungsi untuk toggle menu
+            menuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Fungsi untuk menutup menu saat link diklik (di mobile)
+            window.closeMenu = function() {
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            }
+        });
+    </script>
 </body>
 </html>

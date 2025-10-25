@@ -97,26 +97,6 @@
         </div>
     </main>
     @endsection
-    
-    <!-- Script JavaScript untuk Navigasi Mobile -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const menuButton = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-
-            // Fungsi untuk toggle menu
-            menuButton.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
-
-            // Fungsi untuk menutup menu saat link diklik (di mobile)
-            window.closeMenu = function() {
-                if (!mobileMenu.classList.contains('hidden')) {
-                    mobileMenu.classList.add('hidden');
-                }
-            }
-        });
-    </script>
 
 </body>
 </html>

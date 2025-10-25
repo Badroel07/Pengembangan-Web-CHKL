@@ -180,29 +180,5 @@
     </main>
     @endsection
 
-    <!-- Script JavaScript untuk Navigasi Mobile -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const menuButton = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-
-            // Fungsi untuk toggle menu
-            menuButton.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-                // Mengubah icon button (opsional, tapi bagus untuk UX)
-                const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
-                menuButton.setAttribute('aria-expanded', !isExpanded);
-            });
-
-            // Fungsi untuk menutup menu saat link diklik (di mobile)
-            window.closeMenu = function() {
-                if (!mobileMenu.classList.contains('hidden')) {
-                    mobileMenu.classList.add('hidden');
-                    menuButton.setAttribute('aria-expanded', 'false');
-                }
-            }
-        });
-    </script>
-
 </body>
 </html>

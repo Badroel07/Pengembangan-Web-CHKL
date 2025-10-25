@@ -1,7 +1,16 @@
 @extends('layouts.app') 
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin</title>
+    @include('components.style')
+</head>
 @section('content')
-<div class="container mx-auto px-4 py-8 flex-grow">
+<body>
+    <div class="container mx-auto px-4 py-8 flex-grow">
     <h1 class="text-3xl font-bold mb-6 text-gray-800">Manajemen Proyek (Admin)</h1>
     
     <a href="{{ route('projects.create') }}" class="bg-green-600 text-white py-2 px-4 rounded-lg font-semibold shadow-md hover:bg-green-700 transition duration-300 mb-6 inline-block">
@@ -40,4 +49,6 @@
         </table>
     </div>
 </div>
+</body>
 @endsection
+</html>
