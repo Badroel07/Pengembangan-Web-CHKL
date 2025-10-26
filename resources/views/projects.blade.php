@@ -24,7 +24,7 @@
                 
                 {{-- Tentukan URL dasar untuk semua filter --}}
                 @php
-                    $categories = ['Semua Proyek', 'Tugas Kuliah'];
+                    $categories = ['Semua Proyek', 'Tugas Kuliah', 'Eksperimen Mandiri', 'Lainnya'];
                     $activeCategory = $activeCategory ?? 'Semua Proyek'; // Default ke 'Semua Proyek' jika $activeCategory null
                 @endphp
 
@@ -61,11 +61,11 @@
         
                     {{-- Ulangi (Loop) data proyek di sini --}}
                         @forelse ($projects as $project)
-                            <a href="{{ $project->detail_link ?? '#' }}" class="project-card block bg-white rounded-xl overflow-hidden shadow-xl border border-gray-100 transition-shadow duration-300 hover:shadow-2xl">
+                            <a href="{{ $project->detail_link ?? '#' }}" class="project-card block bg-gray-800 rounded-xl overflow-hidden shadow-xl transition-shadow duration-300 hover:shadow-2xl">
                                 <img src="{{ $project->image_url }}" alt="Proyek {{ $project->title }}" class="w-full h-56 object-cover">
                                 <div class="p-6">
-                                    <h3 class="text-2xl font-bold text-gray-900 mb-3">{{ $project->title }}</h3>
-                                    <p class="text-gray-600 text-base mb-4 line-clamp-2">{{ $project->description }}</p>
+                                    <h3 class="text-2xl font-bold text-white mb-3">{{ $project->title }}</h3>
+                                    <p class="text-gray-50 text-base mb-4 line-clamp-2">{{ $project->description }}</p>
                                     <div class="flex flex-wrap gap-2">
                                         {{-- Ulangi (Loop) teknologi --}}
                                         @if (is_array($project->technologies))
@@ -78,7 +78,7 @@
                             </a>
                         @empty
                             {{-- TULISAN KETIKA $projects KOSONG --}}
-                            <div class="md:col-span-2 lg:col-span-3 text-center py-10 bg-gray-50 rounded-xl border border-gray-200">
+                            <div class="md:col-span-2 lg:col-span-3 text-center py-10 bg-gray-50 rounded-xl border border-gray-200 bg-gray-800">
                                 <p class="text-xl text-gray-500 font-bold">
                                     No Project Yet
                                 </p>

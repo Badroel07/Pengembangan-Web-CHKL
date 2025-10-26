@@ -24,9 +24,9 @@
       <!-- Kolom kiri: teks -->
       <div>
         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white mb-4 leading-tight">
-          Mengenal Lebih Dekat <span class="text-blue-600">Chikal</span>
+          Mengenal Lebih Dekat <span class="text-blue-600 leading-tight">Chikal</span>
         </h1>
-        <p class="text-lg sm:text-xl text-gray-50 mb-6">
+        <p class="text-lg sm:text-xl text-gray-50 mb-6 text-justify">
           Mahasiswa semester 5 Teknik Informatika, Institut Teknologi Garut, dengan fokus pada pengembangan 
           <em>software</em> Full-Stack. Misi saya adalah membangun solusi digital yang efisien dan memberikan dampak nyata.
         </p>
@@ -49,43 +49,51 @@
         <!-- Bagian Tentang Saya (Detail) - Konten ini tetap bisa menggunakan layout 2 kolom yang sudah ada untuk detail -->
         <section id="detail" class="py-16 md:py-24">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                
                 <h2 class="text-3xl font-bold text-center text-white mb-12 border-b-4 border-blue-500 inline-block pb-1">Perjalanan & Filosofi Saya</h2>
-                <div class="max-w-4xl mx-auto text-lg text-white leading-relaxed grid grid-cols-1 md:grid-cols-2 gap-10">
+                
+                <div class="text-lg text-white leading-relaxed grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-16">
                     
-                    <div>
+                    <div class="lg:col-span-1">
                         <h3 class="text-2xl font-semibold text-gray-50 mb-3 flex items-center">
                             <span class="text-blue-600 mr-2">&#127891;</span> Latar Belakang Pendidikan
                         </h3>
+                        <div class="text-justify leading-relaxed">
                         <p class="mb-4">
                             Saya **Chikal**, seorang mahasiswa semester 5 di **Teknik Informatika, Institut Teknologi Garut (IT Garut)**. Sejak memulai perkuliahan, saya telah mengembangkan minat yang kuat di bidang pengembangan *software* dan pemecahan masalah.
                         </p>
                         <p>
                             Kurikulum yang saya ikuti memberi fondasi yang kuat di bidang algoritma, struktur data, dan sistem basis data, yang menjadi bekal utama saya dalam merancang solusi digital yang efisien.
                         </p>
+                        </div>
                     </div>
 
-                    <div>
+                    <div class="lg:col-span-1">
                         <h3 class="text-2xl font-semibold text-white mb-3 flex items-center">
                             <span class="text-blue-600 mr-2">&#128187;</span> Fokus Profesional
                         </h3>
+                        <div class="text-justify leading-relaxed">
                         <p class="mb-4">
                             Fokus utama saya saat ini adalah menjadi Pengembang Web *Full-Stack* yang handal. Saya aktif mempelajari teknologi terbaru di ranah *front-end* seperti React, Next.js, dan Tailwind CSS, untuk menciptakan pengalaman pengguna yang mulus.
                         </p>
                         <p>
                             Di sisi *back-end*, saya mendalami penggunaan Python (dengan framework Django/Flask) dan NodeJS (Express) untuk membangun API yang skalabel dan aman.
                         </p>
+                        </div>
                     </div>
 
-                    <div class="md:col-span-2">
-                        <h3 class="text-2xl font-semibold text-white mb-3 flex items-center mt-6">
+                    <div class="lg:col-span-1">
+                        <h3 class="text-2xl font-semibold text-white mb-3 flex items-center mt-6 lg:mt-0">
                             <span class="text-blue-600 mr-2">&#128161;</span> Visi & Antusiasme
                         </h3>
+                        <div class="text-justify leading-relaxed">
                         <p class="mb-4">
                             Saya selalu antusias dalam mengambil tantangan baru, terutama proyek-proyek yang melibatkan pemecahan masalah kompleks dan pembelajaran mesin. Saya percaya bahwa teknologi harus digunakan untuk memberikan dampak positif.
                         </p>
                         <p>
                             Tujuan saya adalah terus belajar, berkolaborasi dalam tim yang dinamis, dan berkontribusi pada inovasi teknologi yang bermanfaat bagi masyarakat.
                         </p>
+                        </div>
                     </div>
 
                 </div>
@@ -167,11 +175,11 @@
                     Lihat proyek-proyek saya atau hubungi saya langsung untuk mendiskusikan peluang.
                 </p>
                 <div class="flex justify-center space-x-4">
-                    <a href="index.html#proyek" class="btn-primary bg-white text-blue-600 py-3 px-8 rounded-full font-semibold shadow-lg hover:bg-gray-100 transition duration-300 text-center">
-                        Lihat Proyek
+                    <a href="/projects" class="btn-primary bg-white text-blue-600 py-3 px-8 rounded-full font-semibold shadow-lg hover:bg-gray-100 transition duration-300 text-center">
+                        View Project
                     </a>
-                    <a href="index.html#kontak" class="btn-primary border border-white text-white py-3 px-8 rounded-full font-semibold hover:bg-blue-700 transition duration-300 text-center">
-                        Hubungi Saya
+                    <a href="mailto:muhamadchikal12@gmail.com" class="btn-primary border border-white text-white py-3 px-8 rounded-full font-semibold hover:bg-blue-700 transition duration-300 text-center">
+                        Contact Me
                     </a>
                 </div>
             </div>
